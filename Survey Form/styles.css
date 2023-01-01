@@ -1,0 +1,62 @@
+body{
+    background-color: #1a0900;
+    color: #ffffff;
+    font-family: Tahoma;
+    font-size: 14px;
+  }
+  
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  form {
+    width: 40vw;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+  
+  label{
+    display: block;
+    margin: 10px auto;
+  }
+  
+  label, form{
+    width: 95%;
+  }
+  
+  input, textarea {
+    background-color: #331100;
+    border: 1px double #1a0000;
+    color: #ffffff;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #331100;
+    border-color: #f9ecec;
+    min-width: 200px;
+  }
+  
+  fieldset{
+    border: none;
+    margin-top: 10px;
+    padding: 1rem;
+    border-bottom: 3px solid #331100;
+  }
+  
+  textarea{
+    margin-top: 10px;
+  }
+  
+  .inline{
+    width: unset;
+    margin: 0 0.7em 0 0;
+    vertical-align: middle;
+  }

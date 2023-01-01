@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Coffee survey form</title>
   </head>
-<body
-<h1><i>Coffee</i> Survey form</h1>
-<p id="description">What coffee do You drink?</p>
-<form id="survey-form">
-  <label id="name-label">Name: <input id="name" type="text" placeholder="Your name" required /></label>
-  <label id="email-label">E-mail: <input id="email" type="email" placeholder="Your e-mail" required /></label>
-  <label id="number-label">Age: <input id="age" type="number" min="0" max="120" placeholder="Your age" /></label>
-<select id="dropdown">
-  <option>(Choose one)</option>
-  <option>Latte</option>
-  <option>Cappuccino</option>
-  <option>Americano</option>
-  <option>Espresso</option>
-  </select>
-  <label><input type="radio" name="coffee-type" /> Instant coffee  
-  </label>
-<label><input type="radio" name="coffee-type" /> Brewed coffee
-  </label>
-  <label><input type="checkbox" value="latte"/> Latte</label>
-  <label><input type="checkbox" value="cappuccino"/> Cappuccino</label>
-  <label><input type="checkbox" value="americano"/> Americano</label>
-  <label><input type="checkbox" value="espresso"/> Espresso</label>
-  </form>
+  <body>
+    <h1 id="title">Coffee Survey form</h1>
+    <p id="description">What coffee do You drink?</p>
+    <form id="survey-form">
+      <label id="name-label">Name: <input id="name" type="text" placeholder="Your name" required /></label>
+      <label id="email-label">E-mail: <input id="email" type="email" placeholder="Your e-mail" required /></label>
+      <label id="number-label">Age: <input id="number" type="number" min="0" max="120" placeholder="Your age" /></label>
+      <fieldset>
+        <legend>What is Your favorite coffee?</legend>
+        <select id="dropdown">
+          <option>(Choose one)</option>
+          <option>Latte</option>
+          <option>Cappuccino</option>
+          <option>Americano</option>
+          <option>Espresso</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>What coffe do You prefer?</legend>
+        <label><input type="radio" name="coffee-type" value="Instant" class="inline" /> Instant coffee  
+        </label>
+        <label><input type="radio" name="coffee-type" value="brewed" class="inline" /> Brewed coffee
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What type of coffee do You drink?</legend>
+        <label><input type="checkbox" value="latte" class="inline" /> Latte</label>
+        <label><input type="checkbox" value="cappuccino" class="inline" /> Cappuccino</label>
+        <label><input type="checkbox" value="americano" class="inline" /> Americano</label>
+        <label><input type="checkbox" value="espresso" class="inline" /> Espresso</label>
+      </fieldset>
+      <textarea placeholder="Why do You drink coffee?"></textarea>
+      <input id="submit" type="submit"/>
+    </form>
   </body>
-  </html>
+</html>
