@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body
+<h1><i>Coffee</i> Survey form</h1>
+<p id="description">What coffee do You drink?</p>
+<form id="survey-form">
+  <label id="name-label">Name: <input id="name" type="text" placeholder="Your name" required /></label>
+  <label id="email-label">E-mail: <input id="email" type="email" placeholder="Your e-mail" required /></label>
+  <label id="number-label">Age: <input id="age" type="number" min="0" max="120" placeholder="Your age" /></label>
+<select id="dropdown">
+  <option>(Choose one)</option>
+  <option>Latte</option>
+  <option>Cappuccino</option>
+  <option>Americano</option>
+  <option>Espresso</option>
+  </select>
+  <label><input type="radio" name="coffee-type" /> Instant coffee  
+  </label>
+<label><input type="radio" name="coffee-type" /> Brewed coffee
+  </label>
+  <label><input type="checkbox" value="latte"/> Latte</label>
+  <label><input type="checkbox" value="cappuccino"/> Cappuccino</label>
+  <label><input type="checkbox" value="americano"/> Americano</label>
+  <label><input type="checkbox" value="espresso"/> Espresso</label>
+  </form>
+  </body>
+  </html>
