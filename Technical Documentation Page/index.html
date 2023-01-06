@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css">
+        <title>Python - Data Structures</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header id="nav-header">Python - Data Structures</header>
+            <ul>
+                <li><a class="nav-link" href="#Lists" >Lists</a></li>
+                <li><a class="nav-link" href="#The_del_statement">The del statement</a></li>
+                <li><a class="nav-link" href="#Tuples_and_Sequences">Tuples and Sequences</a></li>
+                <li><a class="nav-link" href="#Sets">Sets</a></li>
+                <li><a class="nav-link" href="#Dictionaries">Dictionaries</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Lists">
+                <header>Lists</header>
+                <p>
+                    Some methods of list objects:
+                    <li>list.append(x) - Add an item to the end of the list.</li>
+                    <li>list.pop([i]) - Remove the item at the given position in the list, and return it.</li>
+                    <li>list.count(x) - Return the number of times x appears in the list.</li>
+                    <li>list.extend(iterable) - Extend the list by appending all the items from the iterable.</li>
+                    <li>list.clear() - Remove all items from the list.</li>
+                    An example that uses list methods:
+                    <code>
+                        >>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']<br>
+                        >>> fruits.count('apple')<br>
+                        2<br>
+                        >>> fruits.append('grape')<br>
+                        >>> fruits<br>
+                        ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']<br>
+                        >>> fruits.pop(-1)<br>
+                        'grape'
+                    </code>
+                </p>
+                <p>
+                    Methods like pop or count return value, methods like append only modify the list.
+                </p>
+            </section>
+            <section class="main-section" id="The_del_statement">
+                <header>The del statement</header>
+                <p>
+                    There is a way to remove an item from a list given its index instead of its value: the del statement.
+                    <code>
+                        >>> a = [-1, 1, 66.25, 333, 333, 1234.5]<br>
+                        >>> del a[0]<br>
+                        >>> a<br>
+                        [1, 66.25, 333, 333, 1234.5]
+                    </code>
+                </p>
+                <p>
+                    del can also be used to delete entire variables.
+                </p>
+            </section>
+            <section class="main-section" id="Tuples_and_Sequences">
+                <header>Tuples and Sequences</header>
+                <p>
+                    A tuple consists of a number of values separated by commas.
+                    <code>
+                        >>> t = 12345, 54321, 'hello!'<br>
+                        >>> t[0]<br>
+                        12345<br>
+                        >>> t<br>
+                        (12345, 54321, 'hello!')
+                    </code>
+                </p>
+                <p>
+                    Though tuples may seem similar to lists, they are often used in different situations and for different purposes.
+                </p>
+            </section>
+            <section class="main-section" id="Sets">
+                <header>Sets</header>
+                <p>
+                    A set is an unordered collection with no duplicate elements.
+                    <code>
+                        >>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}<br>
+                        >>> print(basket)<br>
+                        {'orange', 'banana', 'pear', 'apple'}
+                    </code>
+                </p>
+                <p>
+                    Similarly to list comprehensions, set comprehensions are also supported.
+                </p>
+            </section>
+            <section class="main-section" id="Dictionaries">
+                <header>Dictionaries</header>
+                <p>
+                    Dictionaries are sometimes found in other languages as associative memories or associative arrays.
+                    <code>
+                        >>> tel = {'jack': 4098, 'sape': 4139}<br>
+                        >>> tel['guido'] = 4127<br>
+                        >>> tel<br>
+                        {'jack': 4098, 'sape': 4139, 'guido': 4127}
+                    </code>
+                </p>
+                <p>
+                    The main operations on a dictionary are storing a value with some key and extracting the value given the key.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
