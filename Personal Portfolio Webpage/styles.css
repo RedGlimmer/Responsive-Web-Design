@@ -1,17 +1,33 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
 :root{
     --color-one: #cc6666;
     --color-two: #ac3939;
     --shadow-color: black;
-    --text-color: bisque;
+    --bisq-color: #ffe4c4;
 }
 
 body{
     font-family:'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
 }
+
+section{
+    height: 100vh;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* Navigation bar */
 
 #navbar{
     background-color: var(--color-two);
@@ -32,20 +48,20 @@ body{
     width: 450px;
 }
 
-a{
+#nav-buttons > li > a{
     display: block;
     width: 150px;
     height: 40px;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--bisq-color);
 }
 
 .nav-link{
     text-align: center;
-    list-style-type: none;
     width: 150px;
     height: 40px;
     padding: 10px;
+    padding-top: 20px;
     margin: 0;   
 }
 
@@ -68,9 +84,7 @@ a{
     1px 0px 0 var(--shadow-color);
 }
 
-section{
-    height: 100vh;
-}
+/* Welcome section */
 
 #welcome-section{
     margin: -20px;
@@ -85,14 +99,128 @@ section{
         #4d4d4d 75%,
         #333333
     );
-    color:var(--text-color);
+    color:var(--bisq-color);
 }
 
-h1, p{
+.welcome-text{
     position: relative;
     top: 30%;
 }
 
+/* Project section */
+
 #projects{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: -20px;
+    padding: 0;
+    margin-top: -10px;
+    padding-top: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.project-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.project-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    transition: transform 300ms ease-in-out 0ms;
+}
+
+.project-box:hover{
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: var(--bisq-color);
+    transform: scale(1.1);
+}
+
+.project-box > a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.project-box > a:hover{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-shadow:
+    1px 1px 0 var(--shadow-color),
+    -1px 1px 0 var(--shadow-color),
+    1px -1px 0 var(--shadow-color),
+    -1px -1px 0 var(--shadow-color),
+    0px 1px 0 var(--shadow-color),
+    0px -1px 0 var(--shadow-color),
+    -1px 0px 0 var(--shadow-color),
+    1px 0px 0 var(--shadow-color);
+}
+
+.project-tile{
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Contact information */
+
+#contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background: linear-gradient(
+        130deg,
+        #ffba66,
+        var(--bisq-color) 25%,
+        var(--bisq-color) 75%,
+        #ffba66
+    );
+    margin: 0 -10px;
+}
+
+#contact-section > div{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin: 0 auto;
+}
+
+#contact-section > div > li{
+    height: 80px;
+    margin-top: 50px;
+}
+
+#contact-section > div > li > a{
+    color: black;
+}
+
+#fcc-logo{
+    height: 100%;
+}
+
+#github-logo{
+    font-size: 3em;
 }

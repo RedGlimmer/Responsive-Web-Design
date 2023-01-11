@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Szymon Jaroszyński - Personal portfolio webpage" />
         <title>Personal Portfolio Webpage</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
         <link rel="stylesheet" href="./styles.css" />
     </head>
     <body>
@@ -13,38 +14,43 @@
             <div id="nav-buttons">
                 <li class="nav-link"><a href="#welcome-section">About</a></li>
                 <li class="nav-link"><a href="#projects">Projects</a></li>
-                <li class="nav-link"><a href="#contact">Contact</a></li>
+                <li class="nav-link"><a href="#contact-section">Contact</a></li>
             </div>
         </nav>
         <section id="welcome-section">
-            <h1>Hello. My name is Szymon Jaroszyński</h1>
-            <p>and I love to solve problems</p>
+            <h1 class="welcome-text" >Hello. My name is Szymon</h1>
+            <p class="welcome-text" >and I love to solve problems</p>
         </section>
         <Section id="projects">
             <h1>Some of my projects</h1>
-            <hr />
             <div class="project-grid">
                 <div class="project-box">
                     <a href="https://github.com/RedGlimmer/SudokuSolver" target="_blank">
-                        <img src="https://user-images.githubusercontent.com/107247457/205512784-23a71a91-6011-4617-9e2f-2ece0088cfa3.png" alt="Sudoku Solver user interface"/>
-                    </a>
-                    <p class="project-title">Sudoku Solver</p>
+                        <p class="project-tile">Sudoku Solver</p>
+                    </a> 
                 </div>
                 <div class="project-box">
                     <a href="https://github.com/RedGlimmer/ExpertSystem" target="_blank">
-                        <img src="https://user-images.githubusercontent.com/107247457/202871564-cbdb57fb-53c9-4664-8995-8c3aa9839215.png" alt="Expert System user interface"/>
-                    </a>
-                    <p class="project-title">Expert System</p>
+                        <p class="project-tile">Expert System</p>
+                    </a> 
+                </div>
+                <div class="project-box">
+                    <a href="https://github.com/RedGlimmer/TimeTask" target="_blank">
+                        <p class="project-tile">Time Task - Timer</p>
+                    </a> 
                 </div>
             </div>
         </Section>
-        <section id="contact">
-            <li><a href="https://github.com/RedGlimmer" target="_blank">
-                <img id="github-logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo"/>
-            </a></li>
-            <li><a href="https://www.freecodecamp.org/RedGlimmer" target="_blank">
-                <img id="fcc-logo" src="https://d33wubrfki0l68.cloudfront.net/774b60156d8f103170dc66f3ad10310941114653/da262/img/fcc_secondary_large.svg" alt="freeCodeCamp logo"/>
-            </a></li>
+        <section id="contact-section">
+            <h2>You can find me on:</h2>
+            <div>
+                <li><a id="github-logo-link" href="https://github.com/RedGlimmer" target="_blank">
+                    <i id="github-logo" class="fab fa-github"></i>
+                </a></li>
+                <li><a id="profile-link" href="https://www.freecodecamp.org/RedGlimmer" target="_blank">
+                    <img id="fcc-logo" src="https://d33wubrfki0l68.cloudfront.net/774b60156d8f103170dc66f3ad10310941114653/da262/img/fcc_secondary_large.svg" alt="freeCodeCamp logo"/>
+                </a></li>
+            </div>
         </section>
     </body>
 </html>
